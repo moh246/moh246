@@ -23,7 +23,7 @@ How we measured it:
 2. Built an **LLM labeller** that follows the same business rules, ran it on about 20,000 rows, and checked with the business that its labels were right.
 3. Ran all 50,000+ complaints through the pipeline and compared its labels with the LLM labeller's.
 
-Once the complaints reached the right teams, the issues behind them got fixed. That kept about half of a customer group worth over EGP 25M in profit: **roughly EGP 12M retained**.
+The classification quantified about **EGP 12M a year of revenue at risk**: roughly half of a customer group worth over EGP 25M in profit. Once the complaints reached the right teams, the issues behind them got fixed.
 
 ## Stack
 
