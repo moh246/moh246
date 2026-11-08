@@ -40,10 +40,11 @@ I've been reading about regulated medical AI (ISO 13485, IEC 62304, EU MDR and t
 | [Cephalometric Landmark Loss](projects/cephalometric-landmarks.md) | Geometry-aware loss for 19 landmark heatmaps, using the distances and angles between landmarks | Working loss and training loop, tested on synthetic data · [code](https://github.com/moh246/cephalometric-landmark-loss) |
 | [EEG Seizure Detection with Caregiver Alerts](projects/eeg-seizure-detection.md) | SVM on 13 EEG features from CHB-MIT, with a Python service that alerts a caregiver (team project) | ~77% sensitivity; BSc thesis, graded A+ · [code](https://github.com/moh246/eeg-seizure-detection) |
 
-### 3D and generative models
+### Computer vision and 3D
 
 | Project | What it is | Result |
 |---|---|---|
+| [Real-Time Football Video-Assistant System](projects/football-var-system.md) | Player and ball detection, tracking, pitch segmentation and homography for offside decisions on live video | First release shipped as a Flask service |
 | [Facial Expression Retargeting](projects/facial-expression-retargeting.md) | Transfer a person's facial expression to a 3D character with two graph-convolutional VAEs and a latent mapping (team of four) | ITI diploma thesis |
 
 Code from company projects is under NDA, so those pages describe the design only.
@@ -56,10 +57,12 @@ Code from company projects is under NDA, so those pages describe the design only
   Fraud and anomaly detection; wrote business and product requirement documents.
 - **Data Scientist / Junior Product Manager** · Reliance Health, Lagos (remote) · Jun 2022 – Aug 2024<br>
   Fraud detection, pricing models, Medical Expense Ratio. Volunteered as product manager on the Net Promoter Score project.
-- **Computer Vision Engineer** · IT Gate, Cairo · Oct 2021 – Jun 2022
+- **Computer Vision Engineer** · IT Gate, Cairo · Oct 2021 – Jun 2022<br>
+  Real-time football video-assistant system.
 
 ## Education
 
+- **MSc Data Science – Machine Learning & Generative AI** · FH JOANNEUM, Graz · since 2026
 - **Postgraduate Diploma in AI** · ITI / EPITA · Apr 2021 – Jan 2022
 - **BSc Mechatronics Engineering** · Helwan University · 2015 – 2020
 - **Udacity Nanodegrees** · AI for Healthcare, Agentic AI
