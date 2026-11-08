@@ -21,7 +21,7 @@ I've been reading about regulated medical AI (ISO 13485, IEC 62304, EU MDR and t
 | [Voice of the Customer Reclassification](projects/voc-reclassification.md) | Routes app complaints out of an "Other" bucket to the team that can fix them | Accuracy 60% → 92%; ~EGP 12M a year of revenue at risk quantified |
 | [Agentic Portfolio Analytics](projects/agentic-portfolio-analytics.md) | Three AI assistants that answer staff questions from portfolio data, corporate documents and onboarding forms | 6,000+ users; over 90% of answers rated correct |
 | [Customer-Service Chatbot Proposal](projects/customer-service-chatbot-bid.md) | Solution design and proof of concept for a bank's customer-service chatbot tender | Won the bid |
-| [Voice Assistant for ATM Services](projects/atm-voice-assistant.md) | Led a voice assistant for ATM services | – |
+| [Voice Assistant for ATM Services](projects/atm-voice-assistant.md) | Voice assistant for ATM services: speech recognition, request understanding and spoken answers | Project lead |
 
 ### Health insurance
 
@@ -36,7 +36,7 @@ I've been reading about regulated medical AI (ISO 13485, IEC 62304, EU MDR and t
 
 | Project | What it is | Impact |
 |---|---|---|
-| [Fraud and Tampering Detection on Water Meters](projects/water-meter-anomaly-detection.md) | Flags tampering and fraud across a national water utility's meter readings | – |
+| [Fraud and Tampering Detection on Water Meters](projects/water-meter-anomaly-detection.md) | Flags tampering and fraud across a national water utility's meter readings | Built the end-to-end pipeline |
 
 ### Medical AI
 

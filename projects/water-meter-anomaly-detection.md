@@ -12,13 +12,9 @@ A national water utility needed to find tampering and fraud in meter readings. A
 - Judged each meter against its own history and against similar properties, so normal differences between properties aren't flagged.
 - Kept the flags explainable, because a field team has to drive out and inspect each one.
 
-## Impact
-
-<!-- TODO: add the impact (meters covered, cases confirmed, losses found). -->
-
 ---
 
-The work belongs to the company and is under NDA, so this page covers the problem, my role and the impact only.
+The work belongs to the company and is under NDA, so this page covers the problem and my role only.
 
 [← Back to profile](../README.md)
 
