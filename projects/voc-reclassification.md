@@ -1,4 +1,4 @@
-# VOC Reclassification
+# Voice of the Customer Reclassification
 
 Banking · Arabic NLP · I led this project
 

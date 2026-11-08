@@ -1,21 +1,22 @@
 # Agentic Portfolio Analytics
 
-Banking · LLM agents · text-to-SQL
+Banking · LLM agents · RAG · text-to-SQL
 
 ## Problem
 
-Teams needed answers from portfolio data without writing SQL themselves.
-
-<!-- TODO: check this problem line and add specifics (who uses it, what they did before). -->
+To answer a question about the portfolio, a corporate client or a customer form, bank staff had to call colleagues or search through paper records. That took a lot of time.
 
 ## What I built
 
-An enterprise system with three chatbots: **Retail**, **CIOC** and **Corporate**.
+Three separate chatbots, each built for a different kind of data. All of them run on Azure with GPT models.
 
-The Retail bot is a LangGraph SQL agent over the Loans and Credit Cards data. It's made of separate parts, so each one can be tested and traced on its own:
+### 1. Retail chatbot: agentic text-to-SQL
+
+A LangGraph agent with one specialised tool per product: one for **Loans** and one for **Credit Cards**. Each tool has its own prompt and searches only its own table columns, so it doesn't mix the two up.
+
+Around it:
 
 - **Schema database:** describes the tables so the agent knows what it can query
-- **Prompting** layer
 - **Question → SQL engine:** turns a question into a query
 - **Question → Plotly engine:** turns the answer into a chart
 - **Tracing per component** with OpenTelemetry/Traceloop, so a bad answer can be traced back to the step that broke
@@ -23,15 +24,28 @@ The Retail bot is a LangGraph SQL agent over the Loans and Credit Cards data. It
 
 When a generated query fails, the agent retries up to 5 times. If it still can't get it right, it says so plainly and suggests related questions it *can* answer, instead of guessing.
 
+### 2. Corporate chatbot: RAG over documents
+
+Answers questions about corporate clients and how the bank works with them, using standard RAG over a set of PDFs.
+
+### 3. Know-your-customer chatbot: hybrid search
+
+Covers know-your-customer material and customer onboarding forms. Users sometimes need a form returned exactly as it is, and sometimes one specific piece of information. So it combines RAG with keyword search.
+
 ## Result
 
-<!-- TODO: add a result you can share, e.g. number of users, questions answered, LLM-judge pass rate, time saved per request. -->
+| Chatbot | Users |
+|---|---|
+| Retail | 3,000+ |
+| Corporate | about 2,500 |
+| Know-your-customer | 500–1,000 |
 
-The Retail bot answers questions on loans and credit cards and draws charts from the results. When it can't answer, it says so and suggests related questions.
+- The LLM judge scored the answers **above 90%**.
+- Staff now find the answer in the chatbot instead of calling people or searching paper records.
 
 ## Stack
 
-LangGraph · text-to-SQL · Plotly · OpenTelemetry/Traceloop · LLM-as-judge
+LangGraph · GPT models on Azure · text-to-SQL · RAG · keyword search · Plotly · OpenTelemetry/Traceloop · LLM-as-judge
 
 ---
 

@@ -16,37 +16,33 @@ I'm especially interested in regulated medical AI: ISO 13485, IEC 62304, EU MDR 
 
 | Project | Domain | What it is | Result |
 |---|---|---|---|
-| [VOC Reclassification](projects/voc-reclassification.md) | Banking · Arabic NLP | Zero-shot, two-level classifier that routes app complaints out of the "Other" bucket to the team that can fix them | Accuracy 60% → 92%; ~EGP 12M retained |
-| [Agentic Portfolio Analytics](projects/agentic-portfolio-analytics.md) | Banking · LLM agents | LangGraph SQL agent that answers questions on loans and credit cards, with tracing and an LLM judge | — |
-| [Arabic Voice Assistant](projects/arabic-voice-assistant.md) | Insurance · Speech | Speech-to-text, LLM and text-to-speech, all open-source models I post-trained | Deployed to production |
-| [Claims Fraud Detection](projects/claims-fraud-detection.md) | Health insurance · Fraud | XGBoost model that scores claims before payout and rejects flagged ones | ~US$35K in fraudulent payouts prevented in 6 months |
-| [paxflow](projects/paxflow.md) | Medical imaging | Surgical instrument segmentation, turned into a 10-stage pipeline with DICOM output and an audit ledger | Dice ≈ 0.855 |
-| [Chest X-ray Multi-label Classification](projects/chest-xray-multilabel.md) | Medical imaging | DenseNet classifier, deployed with Docker | F1 0.83 |
-| [Cephalometric Landmark Detection](projects/cephalometric-landmarks.md) | Medical imaging · Dental | U-Net with a custom anatomical-context loss | — |
-| [Facial Mesh Generation](projects/facial-mesh-generation.md) | 3D · Generative models | Graph convolutional VAE for 3D facial meshes | ITI diploma thesis |
-| [EEG Seizure Detection with IoT Alerts](projects/eeg-seizure-detection.md) | Neurotech · IoT | Seizure detection from EEG that alerts a caregiver | BSc thesis, graded A+ |
-| [Pneumonia Detection from Chest X-rays](projects/pneumonia-detection.md) | Medical imaging | EDA, training and DICOM inference | — |
-
-<!-- TODO: fill the "—" results above once you have numbers you can share. -->
+| [Voice of the Customer Reclassification](projects/voc-reclassification.md) | Banking · Arabic NLP | Zero-shot, two-level classifier that routes app complaints out of the "Other" bucket to the team that can fix them | Accuracy 60% → 92%; ~EGP 12M retained |
+| [Agentic Portfolio Analytics](projects/agentic-portfolio-analytics.md) | Banking · LLM agents · RAG | Three chatbots on Azure: agentic text-to-SQL for loans and cards, RAG over corporate documents, hybrid search for onboarding forms | 6,000+ users; LLM judge score above 90% |
+| [Arabic Voice Assistant](projects/arabic-voice-assistant.md) | Insurance · Speech | Ask questions in Arabic by voice and get answers from the prescriptions database, built on open-source models, with Whisper fine-tuned on Arabic speech | In production; answers in 5–8 s |
+| [Claims Fraud Detection](projects/claims-fraud-detection.md) | Health insurance · Fraud | XGBoost model that scores every claim before payout: reject, send to investigators, or pay | ~US$35K in fraudulent payouts prevented in 6 months |
+| [Surgical Instrument Segmentation](projects/surgical-instrument-segmentation.md) | Medical imaging | U-Net on robotic surgery video, with a data audit that turned Dice 0.000 into an honest number | Dice 0.846 ± 0.071 (leave-one-surgery-out) · [code](https://github.com/moh246/surgical-instrument-segmentation) |
+| [Chest X-ray Multi-label Classification](projects/chest-xray-multilabel.md) | Medical imaging | DenseNet-121 on the NIH Chest X-ray dataset, patient-level split, served with FastAPI in Docker | F1 0.83 |
+| [Cephalometric Landmark Loss](projects/cephalometric-landmarks.md) | Medical imaging · Dental | Geometry-aware loss for 19 landmark heatmaps, using the distances and angles between landmarks | Working loss and training loop, tested on synthetic data · [code](https://github.com/moh246/cephalometric-landmark-loss) |
+| [Facial Expression Retargeting](projects/facial-expression-retargeting.md) | 3D · Generative models | Transfer a person's facial expression to a 3D character with two graph-convolutional VAEs and a latent mapping (team of four) | ITI diploma thesis |
+| [EEG Seizure Detection with Caregiver Alerts](projects/eeg-seizure-detection.md) | Neurotech · EEG | SVM on 13 EEG features from CHB-MIT, with a Python service that alerts a caregiver (team project) | ~77% sensitivity; BSc thesis, graded A+ · [code](https://github.com/moh246/eeg-seizure-detection) |
+| [Pneumonia Detection from Chest X-rays](projects/pneumonia-detection.md) | Medical imaging | Fine-tuned VGG16 on NIH ChestX-ray14 with a patient-level split, subgroup analysis and DICOM inference | F1 0.44 (radiologist average 0.387) · [code](https://github.com/moh246/pneumonia-detection-xray) |
 
 Code from company projects is under NDA, so those pages describe the design only.
 
 ## Experience
 
 - **Senior AI Engineer** · Banque Misr, Cairo · Oct 2025 – Aug 2026
-- **Senior Data Scientist** (+ product management) · Accord Business Group, Dubai<br>
-  Fraud and anomaly detection; wrote BRDs and PRDs.
-- **Data Scientist / Junior Product Manager** · Reliance Health<br>
-  Fraud detection, pricing models, Medical Expense Ratio. Volunteered as PM on the NPS project.
-- **Computer Vision Engineer** · IT Gate
-- **Consulting** · Voice assistant for Tawuniya (Saudi insurer)
-
-<!-- TODO: add dates for Accord Business Group, Reliance Health and IT Gate (and a location for Reliance Health and IT Gate). -->
+- **AI Consultant** · Voice assistant for Tawuniya (Saudi insurer), remote · 2026
+- **Senior Data Scientist** (+ product management) · Accord Business Group, Dubai · Aug 2024 – Oct 2025<br>
+  Fraud and anomaly detection; wrote business and product requirement documents.
+- **Data Scientist / Junior Product Manager** · Reliance Health, Lagos (remote) · Jun 2022 – Aug 2024<br>
+  Fraud detection, pricing models, Medical Expense Ratio. Volunteered as product manager on the Net Promoter Score project.
+- **Computer Vision Engineer** · IT Gate, Cairo · Oct 2021 – Jun 2022
 
 ## Education
 
 - **Postgraduate Diploma in AI** · ITI / EPITA · Apr 2021 – Jan 2022
-- **BSc Mechatronics Engineering** · Helwan University
+- **BSc Mechatronics Engineering** · Helwan University · 2015 – 2020
 - **Udacity Nanodegrees** · AI for Healthcare, Agentic AI
 
 ## Tools I use
@@ -62,7 +58,7 @@ Code from company projects is under NDA, so those pages describe the design only
 
 - **LLMs and agents:** LangGraph, RAG, text-to-SQL, LLM evaluation in CI/CD, OpenTelemetry/Traceloop, Claude Code
 - **Deep learning and ML:** PyTorch, XGBoost, U-Net, DenseNet, YOLOv8, graph neural networks
-- **Speech and language:** Whisper, XTTS v2, LLaMA, BGE-M3, Arabic NLP
+- **Speech and language:** Whisper, XTTS v2, Qwen, BGE-M3, Arabic NLP
 - **Medical data:** DICOM, highdicom, EEG (braindecode, CHB-MIT, TUSZ)
 - **Serving and MLOps:** FastAPI, Flask, Docker, MLflow, Azure
 
