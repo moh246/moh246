@@ -4,33 +4,26 @@ Computer vision · Real-time video · Sports
 
 ## Problem
 
-An offside decision needs to know where every player and the ball are **on the pitch**, not just in the image, and it has to keep up with live video. At broadcast frame rates the whole pipeline has roughly 40 ms per frame.
+Offside decisions need to know where every player and the ball are on the pitch itself, not just in the camera image. It also has to keep up with live video.
 
-## What I built
+## What I did
 
-Four components, each doing one job:
+Built the first release of a real-time system that:
 
-| Component | Job | Why that one |
-|---|---|---|
-| **YOLOv5** | Detect players and ball in every frame | Single-stage, one forward pass, so it fits the frame budget |
-| **ByteTrack** | Keep each player's identity across frames | Keeps low-confidence detections instead of discarding them, which is what breaks tracking when players are partly hidden |
-| **DETR** | Segment pitch regions and lines | Set prediction with no non-maximum suppression; it runs at a lower rate, so its extra cost is acceptable |
-| **Homography** | Convert pixel positions to pitch coordinates | An offside call needs positions on the ground, not in the image |
+- finds the players and the ball in every frame,
+- keeps track of who is who as they move and overlap,
+- maps their positions from the camera image onto the pitch,
 
-How they fit together: detection finds what's in the frame, tracking says it's the same player across frames, segmentation gives the pitch lines, and the homography turns pixels into pitch coordinates. The pitch is a plane, so mapping from image to pitch is exactly a homography. It's estimated from the pitch line markings, whose real dimensions are known.
+all within the time budget of a single video frame.
 
-## Result
+## Impact
 
-Shipped the first release as a Flask service.
-
-What I took from it: working under a hard real-time constraint changes every architecture decision. A more accurate model that misses the frame budget is worthless.
-
-## Stack
-
-YOLOv5 · ByteTrack · DETR · homography · Flask
+- **First release shipped** as a service.
+- What I took from it: a hard real-time limit changes every design decision. A more accurate model that misses the frame budget is useless.
 
 ---
 
-The code belongs to the company and is under NDA. This page describes the design only.
+The work belongs to the company and is under NDA, so this page covers the problem, my role and the impact only.
 
 [← Back to profile](../README.md)
+

@@ -1,42 +1,24 @@
 # Claims Fraud Detection
 
-Health insurance · Fraud detection
+Health insurance · Fraud prevention
 
 ## Problem
 
-Fraudulent claims were getting paid out. The check had to happen before the money left, not after. And there were no ground-truth fraud labels to train on.
+Fraudulent claims were getting paid out, and finding them afterwards meant chasing money that had already left. The check had to happen before payout.
 
-## What I built
+## What I did
 
-- **Labels from deterministic rules.** Known impossible billing patterns became weak labels: procedure-demographic conflicts, repeats of procedures that can't repeat, geographic impossibilities. Only the rules a human would agree with without debate were used as labels. Statistical features stayed as inputs, because unusual isn't the same as fraudulent.
-- **Features at four levels, from narrow to wide:**
+- Built a model that scores every claim before it is paid.
+- Turned the score into three outcomes: rejected automatically, sent to the investigation team, or paid normally.
+- Set the cut-offs with the business: the automatic rejection level by the cost of rejecting a genuine claim, and the review level by how many cases the investigators could actually handle.
 
-  | Level | The question it asks | Example |
-  |---|---|---|
-  | Claim | Is this claim coherent on its own? | A pregnancy scan billed for a male member |
-  | Provider | Is this provider unusual among its peers? | A clinic billing far more at the top level than similar clinics |
-  | Member | Is this member unusual among similar members? | Several clinics in a few weeks for the same condition |
-  | Relationship | Are a provider and a set of members linked more than they should be? | A large share of a provider's claims coming from a few members |
+## Impact
 
-  The relationship features mattered most. Claims fraud is rarely one bad claim; it's a relationship that repeats.
-- **An XGBoost model** trained on them, outputting a fraud probability.
-- **Inline scoring in the claims flow, in three bands.** Every claim is scored before payout:
-  - above 0.8: rejected automatically
-  - 0.5 to 0.8: sent to the investigation team
-  - below 0.5: paid normally
-
-  The upper threshold was set by the cost of a wrong rejection, agreed with the business. The lower one was set by how many cases the investigators could actually review.
-
-## Result
-
-About **US$35,000 in fraudulent payouts prevented** over a 6-month production run. The money never left the company, so no recovery was needed.
-
-## Stack
-
-XGBoost · feature engineering · rule-based weak labelling
+- About **US$35,000 in fraudulent payouts prevented** over a 6-month production run. The money never left the company, so nothing had to be recovered.
 
 ---
 
-The code belongs to the company and is under NDA. This page describes the design only.
+The work belongs to the company and is under NDA, so this page covers the problem, my role and the impact only.
 
 [← Back to profile](../README.md)
+

@@ -1,32 +1,23 @@
-# Net Promoter Score Program and Member Feedback Classification
+# Net Promoter Score Program and Member Feedback
 
-Health insurance · Product management · NLP
+Health insurance · Product management · Customer experience
 
 ## Problem
 
-The company ran a Net Promoter Score survey, but the free-text answers ("why did you give this score?") were hard to act on at volume. Someone had to read them to find out what was actually wrong.
+The company ran a Net Promoter Score survey, but the written answers ("why did you give this score?") piled up faster than anyone could read them.
 
 ## What I did
 
-- **Product management (volunteer).** Alongside my data science role, I took on the product management of the Net Promoter Score project to learn how a product gets built end to end, from requirements through to delivery.
-- **A classifier for member feedback.** Free-text comments were mapped into a two-level taxonomy (8 categories and 24 subcategories) with zero-shot classification, so no labelled data was needed:
-  - It uses a model trained on natural language inference (BART-MNLI). The comment is the premise, and a sentence like "This text is about claim delays" is the hypothesis.
-  - High entailment means the label applies. Running every candidate label and taking the strongest gives a classifier built from a list of category names alone.
-- **Categories from the business, not from me.** The labels used the business's own wording, which also made the output easy for them to read.
-- **Evaluation on a hand-labelled sample.** Zero-shot skips the training set, but it doesn't skip the gold set.
+- **Product management (volunteer).** Alongside my data science role, I took on the product management of the Net Promoter Score project, to learn how a product gets built end to end.
+- **Automated feedback sorting.** Built a classifier that sorts every written comment into **8 categories and 24 subcategories**, defined in the business's own words. It needed no hand-labelled training data, and I checked it against a hand-labelled sample.
 
-I later used the same idea, zero-shot classification into a taxonomy defined by the business, at much larger scale for the [Voice of the Customer Reclassification](voc-reclassification.md).
+## Impact
 
-## Result
-
-Member feedback became categories the teams could act on, instead of free text nobody had time to read.
-
-## Stack
-
-Zero-shot classification · BART-MNLI · Python
+Member feedback became categories the teams could act on, instead of free text nobody had time to read. I later scaled up the same idea for the [Voice of the Customer Reclassification](voc-reclassification.md).
 
 ---
 
-The code belongs to the company and is under NDA. This page describes the design only.
+The work belongs to the company and is under NDA, so this page covers the problem, my role and the impact only.
 
 [← Back to profile](../README.md)
+

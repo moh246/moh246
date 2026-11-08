@@ -14,25 +14,33 @@ I've been reading about regulated medical AI (ISO 13485, IEC 62304, EU MDR and t
 
 ## Featured projects
 
-### Banking: LLM agents and NLP
+### Banking
 
-| Project | What it is | Result |
+| Project | What it is | Impact |
 |---|---|---|
-| [Voice of the Customer Reclassification](projects/voc-reclassification.md) | Zero-shot, two-level classifier that routes app complaints out of the "Other" bucket to the team that can fix them | Accuracy 60% → 92%; ~EGP 12M a year of revenue at risk quantified |
-| [Agentic Portfolio Analytics](projects/agentic-portfolio-analytics.md) | Three chatbots on Azure: agentic text-to-SQL for loans and cards, RAG over corporate documents, hybrid search for onboarding forms | 6,000+ users; LLM judge score above 90% |
+| [Voice of the Customer Reclassification](projects/voc-reclassification.md) | Routes app complaints out of an "Other" bucket to the team that can fix them | Accuracy 60% → 92%; ~EGP 12M a year of revenue at risk quantified |
+| [Agentic Portfolio Analytics](projects/agentic-portfolio-analytics.md) | Three AI assistants that answer staff questions from portfolio data, corporate documents and onboarding forms | 6,000+ users; over 90% of answers rated correct |
+| [Customer-Service Chatbot Proposal](projects/customer-service-chatbot-bid.md) | Solution design and proof of concept for a bank's customer-service chatbot tender | Won the bid |
+| [Voice Assistant for ATM Services](projects/atm-voice-assistant.md) | Led a voice assistant for ATM services | – |
 
 ### Health insurance
 
-| Project | What it is | Result |
+| Project | What it is | Impact |
 |---|---|---|
-| [Claims Fraud Detection](projects/claims-fraud-detection.md) | XGBoost model that scores every claim before payout: reject, send to investigators, or pay | ~US$35K in fraudulent payouts prevented in 6 months |
-| [Risk-Based Pricing](projects/claims-cost-pricing.md) | XGBoost model of expected claims cost per member, replacing demographics-only pricing | Model-priced groups outperformed the old basis; lower Medical Expense Ratio |
-| [Net Promoter Score Feedback](projects/nps-feedback-classification.md) | Volunteer product manager on the NPS program, plus zero-shot classification of member feedback | Feedback sorted into 8 categories and 24 subcategories |
-| [Arabic Voice Assistant](projects/arabic-voice-assistant.md) | Ask questions in Arabic by voice and get answers from the prescriptions database, built on open-source models, with Whisper fine-tuned on Arabic speech | In production; answers in 5–8 s |
+| [Claims Fraud Detection](projects/claims-fraud-detection.md) | Scores every claim before payout: reject, investigate, or pay | ~US$35K in fraudulent payouts prevented in 6 months |
+| [Risk-Based Pricing](projects/claims-cost-pricing.md) | Prices plans on each member's expected cost instead of demographics alone | Model-priced groups outperformed the old basis; lower Medical Expense Ratio |
+| [Net Promoter Score Feedback](projects/nps-feedback-classification.md) | Volunteer product manager on the NPS program, plus automated sorting of member feedback | Feedback sorted into 8 categories and 24 subcategories |
+| [Arabic Voice Assistant](projects/arabic-voice-assistant.md) | Staff ask questions about prescription data out loud in Arabic and hear the answer | In production; answers in 5–8 s |
+
+### Utilities
+
+| Project | What it is | Impact |
+|---|---|---|
+| [Fraud and Tampering Detection on Water Meters](projects/water-meter-anomaly-detection.md) | Flags tampering and fraud across a national water utility's meter readings | – |
 
 ### Medical AI
 
-| Project | What it is | Result |
+| Project | What it is | Impact |
 |---|---|---|
 | [Surgical Instrument Segmentation](projects/surgical-instrument-segmentation.md) | U-Net on robotic surgery video, with a data audit that turned Dice 0.000 into an honest number | Dice 0.846 ± 0.071 (leave-one-surgery-out) · [code](https://github.com/moh246/surgical-instrument-segmentation) |
 | [Pneumonia Detection from Chest X-rays](projects/pneumonia-detection.md) | Fine-tuned VGG16 on NIH ChestX-ray14 with a patient-level split, subgroup analysis and DICOM inference | F1 0.44 (radiologist average 0.387) · [code](https://github.com/moh246/pneumonia-detection-xray) |
@@ -42,19 +50,19 @@ I've been reading about regulated medical AI (ISO 13485, IEC 62304, EU MDR and t
 
 ### Computer vision and 3D
 
-| Project | What it is | Result |
+| Project | What it is | Impact |
 |---|---|---|
-| [Real-Time Football Video-Assistant System](projects/football-var-system.md) | Player and ball detection, tracking, pitch segmentation and homography for offside decisions on live video | First release shipped as a Flask service |
+| [Real-Time Football Video-Assistant System](projects/football-var-system.md) | Finds and tracks players and the ball on live video and maps them onto the pitch for offside decisions | First release shipped |
 | [Facial Expression Retargeting](projects/facial-expression-retargeting.md) | Transfer a person's facial expression to a 3D character with two graph-convolutional VAEs and a latent mapping (team of four) | ITI diploma thesis |
 
-Code from company projects is under NDA, so those pages describe the design only.
+Work done for employers and clients is under NDA, so those pages cover the problem, my role and the impact only.
 
 ## Experience
 
 - **Senior AI Engineer** · Banque Misr, Cairo · Oct 2025 – Aug 2026
 - **AI Consultant** · Voice assistant for Tawuniya (Saudi insurer), remote · 2026
 - **Senior Data Scientist** (+ product management) · Accord Business Group, Dubai · Aug 2024 – Oct 2025<br>
-  Fraud and anomaly detection; wrote business and product requirement documents.
+  Fraud and anomaly detection, voice AI and chatbot solution design; wrote business and product requirement documents.
 - **Data Scientist / Junior Product Manager** · Reliance Health, Lagos (remote) · Jun 2022 – Aug 2024<br>
   Fraud detection, pricing models, Medical Expense Ratio. Volunteered as product manager on the Net Promoter Score project.
 - **Computer Vision Engineer** · IT Gate, Cairo · Oct 2021 – Jun 2022
