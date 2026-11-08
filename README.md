@@ -57,8 +57,7 @@ Code from company projects is under NDA, so those pages describe the design only
   Fraud and anomaly detection; wrote business and product requirement documents.
 - **Data Scientist / Junior Product Manager** · Reliance Health, Lagos (remote) · Jun 2022 – Aug 2024<br>
   Fraud detection, pricing models, Medical Expense Ratio. Volunteered as product manager on the Net Promoter Score project.
-- **Computer Vision Engineer** · IT Gate, Cairo · Oct 2021 – Jun 2022<br>
-  Real-time football video-assistant system.
+- **Computer Vision Engineer** · IT Gate, Cairo · Oct 2021 – Jun 2022
 
 ## Education
 
