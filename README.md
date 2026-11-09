@@ -25,31 +25,31 @@ The work I did for employers and clients is under NDA, so there's no code here. 
 
 | Project | What it is | Impact |
 |---|---|---|
-| [Voice of the Customer Reclassification](projects/voc-reclassification.md) | Routes app complaints out of an "Other" bucket to the team that can fix them | Accuracy up from 60% to 92%; about EGP 12M a year of revenue at risk quantified |
-| [Agentic Portfolio Analytics](projects/agentic-portfolio-analytics.md) | Three AI assistants that answer staff questions from portfolio data, corporate documents and onboarding forms | 6,000+ users; over 90% of answers rated correct |
-| [Customer-Service Chatbot Proposal](projects/customer-service-chatbot-bid.md) | Solution design and proof of concept for a bank's customer-service chatbot tender | Won the bid |
-| [Voice Assistant for ATM Services](projects/atm-voice-assistant.md) | Voice assistant for ATM services: speech recognition, request understanding and spoken answers | Project lead |
+| [Voice of the Customer Reclassification](professional-work/voc-reclassification.md) | Routes app complaints out of an "Other" bucket to the team that can fix them | Accuracy up from 60% to 92%; about EGP 12M a year of revenue at risk quantified |
+| [Agentic Portfolio Analytics](professional-work/agentic-portfolio-analytics.md) | Three AI assistants that answer staff questions from portfolio data, corporate documents and onboarding forms | 6,000+ users; over 90% of answers rated correct |
+| [Customer-Service Chatbot Proposal](professional-work/customer-service-chatbot-bid.md) | Solution design and proof of concept for a bank's customer-service chatbot tender | Won the bid |
+| [Voice Assistant for ATM Services](professional-work/atm-voice-assistant.md) | Voice assistant for ATM services: speech recognition, request understanding and spoken answers | Project lead |
 
 ### Health insurance
 
 | Project | What it is | Impact |
 |---|---|---|
-| [Claims Fraud Detection](projects/claims-fraud-detection.md) | Scores every claim before payout: reject, investigate, or pay | About US$35,000 of fraudulent payouts prevented in six months |
-| [Risk-Based Pricing](projects/claims-cost-pricing.md) | Prices plans on each member's expected cost instead of demographics alone | Model-priced groups outperformed the old basis; lower Medical Expense Ratio |
-| [Net Promoter Score Feedback](projects/nps-feedback-classification.md) | Volunteer product manager on the Net Promoter Score program, plus automated sorting of member feedback | Feedback sorted into 8 categories and 24 subcategories |
-| [Arabic Voice Assistant](projects/arabic-voice-assistant.md) | Staff ask questions about prescription data out loud in Arabic and hear the answer | In production; answers in 5 to 8 seconds |
+| [Claims Fraud Detection](professional-work/claims-fraud-detection.md) | Scores every claim before payout: reject, investigate, or pay | About US$35,000 of fraudulent payouts prevented in six months |
+| [Risk-Based Pricing](professional-work/claims-cost-pricing.md) | Prices plans on each member's expected cost instead of demographics alone | Model-priced groups outperformed the old basis; lower Medical Expense Ratio |
+| [Net Promoter Score Feedback](professional-work/nps-feedback-classification.md) | Volunteer product manager on the Net Promoter Score program, plus automated sorting of member feedback | Feedback sorted into 8 categories and 24 subcategories |
+| [Arabic Voice Assistant](professional-work/arabic-voice-assistant.md) | Staff ask questions about prescription data out loud in Arabic and hear the answer | In production; answers in 5 to 8 seconds |
 
 ### Utilities
 
 | Project | What it is | Impact |
 |---|---|---|
-| [Fraud and Tampering Detection on Water Meters](projects/water-meter-anomaly-detection.md) | Flags tampering and fraud across a national water utility's meter readings | Built the end-to-end pipeline |
+| [Fraud and Tampering Detection on Water Meters](professional-work/water-meter-anomaly-detection.md) | Flags tampering and fraud across a national water utility's meter readings | Built the end-to-end pipeline |
 
 ### Computer vision
 
 | Project | What it is | Impact |
 |---|---|---|
-| [Real-Time Football Video-Assistant System](projects/football-var-system.md) | Finds and tracks players and the ball on live video and maps them onto the pitch for offside decisions | First release shipped |
+| [Real-Time Football Video-Assistant System](professional-work/football-var-system.md) | Finds and tracks players and the ball on live video and maps them onto the pitch for offside decisions | First release shipped |
 
 ## Study work
 
@@ -57,12 +57,12 @@ Theses, coursework and technical tasks. The code is linked where I could make it
 
 | Project | What it is | Result | Code |
 |---|---|---|---|
-| [Surgical Instrument Segmentation](projects/surgical-instrument-segmentation.md) | U-Net on robotic surgery video, with a data audit that turned Dice 0.000 into an honest number | Dice 0.846 ± 0.071 (leave-one-surgery-out) | [repo](https://github.com/moh246/surgical-instrument-segmentation) |
-| [Pneumonia Detection from Chest X-rays](projects/pneumonia-detection.md) | Fine-tuned VGG16 on NIH ChestX-ray14 with a patient-level split, subgroup analysis and DICOM inference (Udacity nanodegree) | F1 0.44 (radiologist average 0.387) | [repo](https://github.com/moh246/pneumonia-detection-xray) |
-| [EEG Seizure Detection with Caregiver Alerts](projects/eeg-seizure-detection.md) | SVM on 13 EEG features from CHB-MIT, with a Python service that alerts a caregiver (BSc thesis, team project) | About 77% sensitivity; graded A+ | [repo](https://github.com/moh246/eeg-seizure-detection) |
-| [Cephalometric Landmark Loss](projects/cephalometric-landmarks.md) | Geometry-aware loss for 19 landmark heatmaps, using the distances and angles between landmarks | Working loss and training loop, tested on synthetic data | [repo](https://github.com/moh246/cephalometric-landmark-loss) |
-| [Facial Expression Retargeting](projects/facial-expression-retargeting.md) | Transfer a person's facial expression to a 3D character with two graph-convolutional VAEs and a latent mapping (ITI diploma thesis, team of four) | Working pipeline on 3D face meshes | |
-| [Chest X-ray Multi-label Classification](projects/chest-xray-multilabel.md) | DenseNet-121 on the NIH Chest X-ray dataset, patient-level split, served with FastAPI in Docker | F1 0.83 | |
+| [Surgical Instrument Segmentation](study-work/surgical-instrument-segmentation.md) | U-Net on robotic surgery video, with a data audit that turned Dice 0.000 into an honest number | Dice 0.846 ± 0.071 (leave-one-surgery-out) | [repo](https://github.com/moh246/surgical-instrument-segmentation) |
+| [Pneumonia Detection from Chest X-rays](study-work/pneumonia-detection.md) | Fine-tuned VGG16 on NIH ChestX-ray14 with a patient-level split, subgroup analysis and DICOM inference (Udacity nanodegree) | F1 0.44 (radiologist average 0.387) | [repo](https://github.com/moh246/pneumonia-detection-xray) |
+| [EEG Seizure Detection with Caregiver Alerts](study-work/eeg-seizure-detection.md) | SVM on 13 EEG features from CHB-MIT, with a Python service that alerts a caregiver (BSc thesis, team project) | About 77% sensitivity; graded A+ | [repo](https://github.com/moh246/eeg-seizure-detection) |
+| [Cephalometric Landmark Loss](study-work/cephalometric-landmarks.md) | Geometry-aware loss for 19 landmark heatmaps, using the distances and angles between landmarks | Working loss and training loop, tested on synthetic data | [repo](https://github.com/moh246/cephalometric-landmark-loss) |
+| [Facial Expression Retargeting](study-work/facial-expression-retargeting.md) | Transfer a person's facial expression to a 3D character with two graph-convolutional VAEs and a latent mapping (ITI diploma thesis, team of four) | Working pipeline on 3D face meshes | |
+| [Chest X-ray Multi-label Classification](study-work/chest-xray-multilabel.md) | DenseNet-121 on the NIH Chest X-ray dataset, patient-level split, served with FastAPI in Docker | F1 0.83 | |
 
 ## Experience
 
