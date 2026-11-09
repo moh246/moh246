@@ -21,4 +21,4 @@ A single chest X-ray can show several findings at once, so the model has to pred
 
 DenseNet-121 · NIH Chest X-ray · FastAPI · Docker
 
-[← Back to profile](../README.md)
+[Back to profile](../README.md)

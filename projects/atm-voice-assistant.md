@@ -14,5 +14,5 @@ Bring voice interaction to ATM services.
 
 The work belongs to the company and is under NDA, so this page covers the problem and my role only.
 
-[← Back to profile](../README.md)
+[Back to profile](../README.md)
 

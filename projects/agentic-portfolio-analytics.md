@@ -31,5 +31,5 @@ Every answer is checked automatically. When an assistant can't answer reliably, 
 
 The work belongs to the company and is under NDA, so this page covers the problem, my role and the impact only.
 
-[← Back to profile](../README.md)
+[Back to profile](../README.md)
 

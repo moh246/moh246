@@ -31,4 +31,4 @@ PyTorch · encoder–decoder CNN · custom loss
 
 **Code:** [cephalometric-landmark-loss](https://github.com/moh246/cephalometric-landmark-loss)
 
-[← Back to profile](../README.md)
+[Back to profile](../README.md)

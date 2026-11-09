@@ -20,5 +20,5 @@ A bank put out a tender for a customer-service chatbot. To win it, the proposal 
 
 The work belongs to the company and is under NDA, so this page covers the problem, my role and the impact only.
 
-[← Back to profile](../README.md)
+[Back to profile](../README.md)
 

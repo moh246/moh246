@@ -40,4 +40,4 @@ About **75% accuracy, 77% sensitivity and 75% specificity** across the experimen
 
 MATLAB · SVM (RBF) · signal processing · Python · MATLAB Engine API · CHB-MIT
 
-[← Back to profile](../README.md)
+[Back to profile](../README.md)

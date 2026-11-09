@@ -44,4 +44,4 @@ Every check is a guard that prints PASS or FAIL in a plain sentence. Expected fa
 
 PyTorch · U-Net (ResNet-34 encoder) · segmentation-models-pytorch · Albumentations
 
-[← Back to profile](../README.md)
+[Back to profile](../README.md)

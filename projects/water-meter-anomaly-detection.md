@@ -16,5 +16,5 @@ A national water utility needed to find tampering and fraud in meter readings. A
 
 The work belongs to the company and is under NDA, so this page covers the problem and my role only.
 
-[← Back to profile](../README.md)
+[Back to profile](../README.md)
 

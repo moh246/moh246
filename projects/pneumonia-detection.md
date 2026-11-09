@@ -32,4 +32,4 @@ For context, the CheXNet paper reports an average F1 of 0.387 for practising rad
 
 Keras/TensorFlow · VGG16 · pydicom · scikit-learn · pandas
 
-[← Back to profile](../README.md)
+[Back to profile](../README.md)

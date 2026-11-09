@@ -20,5 +20,5 @@ Fraudulent claims were getting paid out, and finding them afterwards meant chasi
 
 The work belongs to the company and is under NDA, so this page covers the problem, my role and the impact only.
 
-[← Back to profile](../README.md)
+[Back to profile](../README.md)
 

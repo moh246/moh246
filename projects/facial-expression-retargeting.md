@@ -35,4 +35,4 @@ A working retargeting pipeline on FaceWarehouse meshes, plus a clear diagnosis o
 
 Graph convolutional networks · variational autoencoders · deformation transfer · MediaPipe Face Mesh · FaceWarehouse
 
-[← Back to profile](../README.md)
+[Back to profile](../README.md)

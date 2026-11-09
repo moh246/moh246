@@ -24,5 +24,5 @@ Complaints from the mobile app kept landing in an "Other" bucket. Nobody owned t
 
 The work belongs to the company and is under NDA, so this page covers the problem, my role and the impact only.
 
-[← Back to profile](../README.md)
+[Back to profile](../README.md)
 
